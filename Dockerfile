@@ -11,3 +11,5 @@ RUN apt-get install -y --no-install-recommends \
 wget \
 ca-certificates
 
+RUN wget https://softwarepublico.gov.br/social/articles/0000/5869/gnuteca_3.3.8.deb | apt install
+
