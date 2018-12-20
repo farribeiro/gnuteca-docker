@@ -17,8 +17,8 @@ pdo_mysql \
 pdo_pgsql \
 pdo_sqlite \
 ldap \
-
-RUN wget https://softwarepublico.gov.br/social/articles/0000/5869/gnuteca_3.3.8.deb | apt install
+&& wget https://softwarepublico.gov.br/social/articles/0000/5869/gnuteca_3.3.8.deb -O /gnuteca_3.deb \
+&& dpkg -i --force-depends /gnuteca_3.deb
 
 RUN apt-get remove -y \
 wget \
