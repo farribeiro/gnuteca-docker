@@ -10,6 +10,9 @@ RUN apt-get update \
 wget \
 ca-certificates \
 libyaz4-dev \
+libpng-dev \
+libpq-dev \
+sqlite3 \
 && docker-php-ext-install \
 gd \
 pdo \
