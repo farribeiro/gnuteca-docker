@@ -8,7 +8,15 @@ RUN apt-get update \
 && apt-get upgrade -y \
 && apt-get install -y --no-install-recommends \
 wget \
-ca-certificates
+ca-certificates \
+libyaz4-dev \
+&& docker-php-ext-install \
+gd \
+pdo \
+pdo_mysql \
+pdo_pgsql \
+pdo_sqlite \
+ldap \
 
 RUN wget https://softwarepublico.gov.br/social/articles/0000/5869/gnuteca_3.3.8.deb | apt install
 
